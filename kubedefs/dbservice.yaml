@@ -6,7 +6,7 @@ spec:
   selector:
     app: vprodb
   ports:
-    - name: vprodb-port
+    - targetPort: vprodb-port
       port: 3306
-      targetPort: TCP
+      protocol: TCP
   type: ClusterIP

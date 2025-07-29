@@ -6,7 +6,7 @@ spec:
   selector:
     app: vpromc
   ports:
-    - name: vpromc-port
-      port: 11211
-      targetPort: TCP
+    - port: 11211
+      protocol: TCP
+      targetPort: vpromc-port
   type: ClusterIP
